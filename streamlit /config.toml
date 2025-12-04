@@ -1,0 +1,35 @@
+[global] 
+#If True ,will  show the warning when you  run a stramlit-enable scrit via "python my-script.py" 
+#Default : True 
+showWarningOnDirectExecution = True 
+
+[logger] 
+# level of logging : 'error' ,'warning','info',or 'debug' 
+level = "debug" 
+
+
+[runner] 
+# allow you to type a variable or string by itself in a single line of python code to write it to app 
+# Deafult : true 
+magicEnable =true 
+
+
+[server] 
+#list of folders that should be watched for changes.Relative paths will be taken as Relative to the current working directory 
+# example : ['/home/user/env','relative/path/to/folder'] 
+#Deafult: [] 
+folderWatchblacklist = [''] 
+
+# If false ,will attempt to open a browser window on start 
+# Deafult : false unless (1) we are on a linux box where Display is unset , or (2) server .liveSave is set 
+headless =false 
+
+#Immediately share the app in such a way that enables live monitoring , and post-run analysis . 
+# Deafult : false 
+liveSave =false 
+# Automatically return script when the file  is modified on the disk 
+# Deafult : false 
+runOnSave =false 
+
+# The port where the server will listen for client and browser connections 
+# Deafult : 8501 
